@@ -1,4 +1,4 @@
--- 📂 /lua/config/keymaps.lua
+-- /lua/config/keymaps.lua
 vim.g.mapleader = " "
 local keymap = vim.keymap.set
 
@@ -11,11 +11,12 @@ keymap("n", "<leader>gs", ":Git<CR>")
 keymap("n", "<leader>Q", ":bd<CR>")
 keymap("n", "<leader>o", [["_o<Esc>]])
 keymap("n", "<leader>O", [["_O<Esc>]])
-keymap('t', '<Esc>', [[<C-\><C-n>]], { noremap = true, silent = true })
+keymap("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
 keymap("n", "<leader>q", ":ToggleTerm dir=%:p:h<CR>", { noremap = true, silent = true })
-
-
-
-
-
-
+keymap({ "n", "v" }, "<leader>fm", function()
+	local formatter = require("conform")
+	formatter.format({
+		lsp_fallback = true,
+		timeout_ms = 500,
+	})
+end, { noremap = true, silent = true })
