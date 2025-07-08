@@ -10,9 +10,9 @@ iron.setup({
   --     "python", "-i"
   --   },
   -- },
-  -- You can add your keybindings here, for example:
-  -- vim.keymap.set('n', '<leader>sr', '<cmd>IronRepl<CR>', { desc = 'Start Iron REPL' })
-  -- vim.keymap.set('n', '<leader>rr', '<cmd>IronRestart<CR>', { desc = 'Restart Iron REPL' })
-  -- vim.keymap.set('n', '<leader>rs', '<cmd>IronSendLine<CR>', { desc = 'Send line to Iron REPL' })
-  -- vim.keymap.set('n', '<leader>rf', '<cmd>IronSendFile<CR>', { desc = 'Send file to Iron REPL' })
+  -- Keybindings for Jupyter-like functionality
+  vim.keymap.set('n', '<leader>rs', '<cmd>IronSendLine<CR>', { desc = 'Send line/selection to Iron REPL' })
+  vim.keymap.set('v', '<leader>rs', '<cmd>IronSendVisual<CR>', { desc = 'Send visual selection to Iron REPL' })
+  vim.keymap.set('n', '<leader>rf', '<cmd>IronSendFile<CR>', { desc = 'Send file to Iron REPL' })
+  vim.keymap.set('n', '<leader>rc', '<cmd>IronClearBuffer<CR>', { desc = 'Clear Iron REPL buffer' })
 })
