@@ -47,4 +47,10 @@ return {
 			})
 		end,
 	},
+	{
+		"Vigemus/iron.nvim",
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+		},
+	},
 }

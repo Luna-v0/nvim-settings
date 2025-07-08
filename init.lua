@@ -21,6 +21,7 @@ require("config.cmp")
 require("config.misc")
 
 require("config.copilot")
+require("config.iron")
 -- 7. Theme
 require("config.colors")
 vim.cmd[[colorscheme catppuccin]]
