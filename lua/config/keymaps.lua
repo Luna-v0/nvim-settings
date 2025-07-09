@@ -19,9 +19,3 @@ keymap({ "n", "v" }, "<leader>fm", function()
 		timeout_ms = 500,
 	})
 end, { noremap = true, silent = true })
-
--- Iron.nvim keybindings
-keymap('n', '<leader>rs', '<cmd>IronSendLine<CR>', { desc = 'Send line/selection to Iron REPL' })
-keymap('v', '<leader>rs', '<cmd>IronSendVisual<CR>', { desc = 'Send visual selection to Iron REPL' })
-keymap('n', '<leader>rf', '<cmd>IronSendFile<CR>', { desc = 'Send file to Iron REPL' })
-keymap('n', '<leader>rc', '<cmd>IronClearBuffer<CR>', { desc = 'Clear Iron REPL buffer' })

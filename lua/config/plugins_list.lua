@@ -47,21 +47,4 @@ return {
 			})
 		end,
 	},
-	{
-		"Vigemus/iron.nvim",
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-		},
-		config = function()
-			require("iron.core").setup({
-				-- Iron.nvim configuration options
-				-- For example, to define a Python REPL:
-				repl_definition = {
-					python = {
-						"python", "-i"
-					},
-				},
-			})
-		end,
-	},
 }
