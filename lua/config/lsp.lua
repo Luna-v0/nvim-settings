@@ -6,7 +6,7 @@ require("mason-lspconfig").setup {
 
 local lspconfig = require("lspconfig")
 
-local servers = { "pyright", "ts_ls", "eslint", "lua_ls" }
+local servers = { "pyright", "ts_ls", "eslint", "lua_ls", "jdtls" }
 for _, server in ipairs(servers) do
   lspconfig[server].setup {}
 end
