@@ -16,6 +16,7 @@ require("config.plugins_list")
 -- 5. Configure LSP and Autocompletion
 require("config.lsp")
 require("config.cmp")
+require("config.telescope")
 
 -- 6. Miscellaneous enhancements
 require("config.misc")
