@@ -53,7 +53,6 @@ return {
 	{ "folke/todo-comments.nvim" },
 	{ "folke/persistence.nvim" },
 	{ "rcarriga/nvim-notify" },
-	{ "nvim-neorocks/neovim-visual-effects" },
 	{ "lukas-reineke/indent-blankline.nvim" },
 	{
 		"stevearc/conform.nvim",
