@@ -22,18 +22,6 @@ require("nvim-tree").setup({
         folder_arrow = true,
         git = true,
       },
-      glyphs = {
-        default = "",
-        folder = {
-          arrow_open = "",
-          arrow_closed = "",
-          default = "",
-          open = "",
-          empty = "",
-          empty_open = "",
-          symlink = "",
-          symlink_open = "",
-        },
         git = {
           unstaged = "",
           staged = "✓",
