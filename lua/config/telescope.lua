@@ -45,7 +45,7 @@ telescope({
         ["<C-j>"] = actions.move_selection_next,
         ["<C-k>"] = actions.move_selection_previous,
         ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
-        ["<CR>"] = actions.select_default + actions.center_on_result,
+        ["<CR>"] = actions.select_default,
       },
       n = {
         ["<C-j>"] = actions.move_selection_next,
