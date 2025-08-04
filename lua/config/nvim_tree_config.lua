@@ -1,8 +1,6 @@
 require("nvim-tree").setup({
   disable_netrw = true,
   hijack_netrw = true,
-  open_on_setup = false,
-  ignore_ft_on_setup = { "dashboard", "startify" },
   auto_close = true,
   sync_root_with_cwd = true,
   update_focused_file = {
@@ -11,7 +9,6 @@ require("nvim-tree").setup({
   },
   view = {
     width = 30,
-    hide_root_folder = false,
     relativenumber = false,
     signcolumn = "yes",
   },
@@ -19,15 +16,34 @@ require("nvim-tree").setup({
     group_empty = true,
     highlight_git = true,
     icons = {
-      git_placement = "before",
-      padding = " ",
-      root_folder = "",
-      folder = "",
-      folder_open = "",
-      folder_closed = "",
-      file = "",
-      symlink_folder = "",
-      symlink_file = "",
+      show = {
+        file = true,
+        folder = true,
+        folder_arrow = true,
+        git = true,
+      },
+      glyphs = {
+        default = "",
+        folder = {
+          arrow_open = "",
+          arrow_closed = "",
+          default = "",
+          open = "",
+          empty = "",
+          empty_open = "",
+          symlink = "",
+          symlink_open = "",
+        },
+        git = {
+          unstaged = "",
+          staged = "✓",
+          untracked = "?",
+          deleted = "✗",
+          renamed = "➜",
+          unmerged = "═",
+          ignored = "◌",
+        },
+      },
     },
   },
   filters = {
