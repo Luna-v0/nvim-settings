@@ -19,6 +19,7 @@ require("config.cmp")
 
 -- 6. Miscellaneous enhancements
 require("config.misc")
+require("config.visual_effects")
 
 require("config.copilot")
 -- 7. Theme

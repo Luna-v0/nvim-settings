@@ -1,6 +1,35 @@
 -- 📂 /lua/config/plugins_list.lua
 return {
 	{ "nvim-lua/plenary.nvim" },
+	{
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		opts = {
+			cmdline = {
+				enabled = true,
+				view = "cmdline_popup",
+			},
+			messages = {
+				enabled = true,
+				view = "popup",
+			},
+			popupmenu = {
+				enabled = true,
+				view = "popup",
+			},
+			presets = {
+				bottom_search = false,
+				command_palette = true,
+				long_message_to_split = true,
+				inc_rename = false,
+				lsp_doc_border = false,
+			},
+		},
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"rcarriga/nvim-notify",
+		},
+	},
 	{ "nvim-telescope/telescope.nvim" },
 	{ "nvim-tree/nvim-tree.lua" },
 	{ "nvim-tree/nvim-web-devicons" },
@@ -24,6 +53,7 @@ return {
 	{ "folke/todo-comments.nvim" },
 	{ "folke/persistence.nvim" },
 	{ "rcarriga/nvim-notify" },
+	{ "nvim-neorocks/neovim-visual-effects" },
 	{ "lukas-reineke/indent-blankline.nvim" },
 	{
 		"stevearc/conform.nvim",
