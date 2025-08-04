@@ -7,11 +7,11 @@ return {
 		opts = {
 			cmdline = {
 				enabled = true,
-				view = "cmdline_popup",
+				view = "cmdline", -- Changed from cmdline_popup
 			},
 			messages = {
 				enabled = true,
-				view = "popup",
+				view = "mini", -- Changed from popup
 			},
 			popupmenu = {
 				enabled = true,
